@@ -324,7 +324,10 @@ XwcPay.prototype = {
 			method: 'QueryPayId',
 			params: [serialNumber]
 		}));
-	}
+	},
+	closePopup: function () {
+		return this.postMessageRequest('closePopup', {}, 'closePopup', 5000);
+	},
 };
 
 module.exports = XwcPay;
