@@ -1,7 +1,7 @@
 {
   "name": "xwcpay.js",
   "version": "0.1.0",
-  "copyright": "Copyright © 2018 XWC",
+  "copyright": "Copyright © 2019 XWC",
   "description": "xwc JavaScript PAY SDK",
   "main": "xwcpay.js",
   "scripts": {
@@ -15,7 +15,6 @@
   "license": "LGPL-3.0",
   "keywords": [
     "xwc",
-    "HyperExchange",
     "javascript",
     "pay",
     "xwcpay"

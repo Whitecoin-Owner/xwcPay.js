@@ -332,14 +332,14 @@ var NodeClient = function () {
         return this.apiInstance.db_api().exec("list_assets", [lower_bound_symbol, limit]);
     };
 
-    // 查询地址的资产余额
+    // query address' balances
 
 
     NodeClient.prototype.getAddrBalances = function getAddrBalances(address) {
         return this.apiInstance.db_api().exec("get_addr_balances", [address]);
     };
 
-    // 查询合约的资产余额
+    //query contract's balances
 
 
     // 查询质押收益
@@ -1659,7 +1659,7 @@ helper.new_contract_invoke_operation = function (callerAddr, callerPubKey, gasLi
     return op;
 };
 
-// 转账
+// transfer
 helper.new_transfer_operation = function (fromAddress, toAddress, amount, assetId, memo) {
     var memoObject = undefined;
     if (memo) {

@@ -1659,7 +1659,7 @@ helper.new_contract_invoke_operation = function (callerAddr, callerPubKey, gasLi
     return op;
 };
 
-// 转账
+// transfer
 helper.new_transfer_operation = function (fromAddress, toAddress, amount, assetId, memo) {
     var memoObject = undefined;
     if (memo) {

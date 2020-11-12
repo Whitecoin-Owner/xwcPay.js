@@ -6937,7 +6937,7 @@ XwcPay.prototype = {
 
 	defaultConfig: {
 		chainId: '2e13ba07b457f2e284dcfcbd3d4a3e4d78a6ed89a61006cdb7fdad6d67ef0b12',
-		network: 'ws://nodeapi.xwclab.org:6090' // 'wss://nodeapi.xwclab.org'
+		network: 'wss://whitecoin.info'
 	},
 
 	postMessageRequest: function (method, data, callbackRegisterMethod, timeout) {
@@ -7037,8 +7037,8 @@ XwcPay.prototype = {
 		return this.postMessageRequest('getConfig', {}, 'getConfig', 10000).then(function (config) {
 			xwcChainConfigCacheInXwcPay = config;
 			if (config) {
-				if (config.network === 'ws://nodeapi.xwclab.org:6090') {
-					config.network = 'ws://nodeapi2.xwclab.org:6090';
+				if (config.network === 'ws://nodeapi.whitecoin.info:6090') {
+					config.network = 'wss://nodeapi.whitecoin.info';
 				}
 			}
 			return config;
